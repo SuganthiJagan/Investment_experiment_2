@@ -1,0 +1,91 @@
+{{ extends 'global/Page.html' }}
+{{ block title }}Investment task{{ endblock }}
+
+{{ block content }}
+
+
+<p>
+In the following, we will explain the investment task very carefully. At the end, we will ask a specific question to make sure that you understand the task at hand.    
+</p>
+<p>
+    </p>
+<p>
+You will receive an endowment of USD 2. In our experiment, you will be asked to invest your endowment of USD 2 in a risky investment. In particular, we will allocate a series of stocks to you. You always have to invest the entire amount in that particular stock. You will have the opportunity to specify the amount of leverage that you want to apply to your investment.     
+</p>
+<p>
+    </p>
+<p>
+At the end of the experiment, we will randomly select one of the stocks to determine your payoff. Then, we will apply the leverage of your choice for that particular stock, and randomly determine the outcome of your investment decision. Thus, your payoff depends on the leverage that you choose and on chance. 
+</p>
+<p>  
+</p>
+<p>
+   <b>Leverage</b> 
+</p>
+<p>
+    </p>
+<p>
+    Leverage is a strategy that allows you to multiply our buying power to invest by creating a position with a larger exposure to the stock without investing more capital. Any amount of leverage increases your exposure to the stock. If you increase the level of leverage of your investment, it allows you to multiply your exposure to the stock in proportion to the leverage ratio (for example 5:1 as opposed to 2:1). The multiplier shows you how much buying power you will apply to your initial investment. 
+</p>
+<p>
+    </p>
+<p>
+    When you use leverage, your investment carries a higher degree of risk. Leverage increases the magnitude of both gains and losses. If you use leverage and chance moves against you, your payoff will be lower than if leverage had not been applied. If you use leverage and chance moves in your favor, your payoff will be higher than if leverage had not been applied. 
+</p>
+<p>
+    For example:
+</p>
+<p>
+    If you invest USD 2 with no leverage, for every 1% move in chance you can gain or lose 2 cents, which equals 1% of USD 2. 
+</p>
+<p>
+    </p>
+<p>
+    If you invest the same USD 2 using 5:1 leverage, the dollar value of your position would be equal to USD 10. 1% of USD 10 equals 10 cents, so for every 1% move in chance, you can gain or lose 10 cents. 
+</p>
+<p>
+    </p>
+<p>
+    Another example:
+</p>
+<p>
+    Consider a stock with the following distribution. 
+</p>
+<p>
+    <img src="{% static "Payoff_distributions/hist_dist_noleverage.png" %}"/> 
+</p>
+<p>
+    This stock has a volatility of 10%. 
+</p>
+<p>
+    </p>
+<p>
+    When applying a leverage of 3:1 to this stock, the volatility of your investment would end up being 30%, as depicted in the following distribution. 
+</p>
+<p>
+    <img src="{% static "Payoff_distributions/hist_dist_leverage.png" %}"/> 
+</p>
+<p>
+</p>
+<p>
+    A quick question: 
+</p>
+<p>
+    With the following question, we want to make sure that you understand the concept of leverage. Imagine you invest in a stock with a <b>volatility of 2%</b>.
+</p>
+<p>
+    </p>
+<p>
+   <p>
+    On this stock, a leverage of 4:1 is being applied. 
+    {{ formfield 'Explanation' }} 
+</p>
+<p>
+    </p>
+<p>
+</p>
+
+
+{{ next_button }}
+
+{{ endblock }}

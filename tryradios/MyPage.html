@@ -1,0 +1,26 @@
+{{ extends 'global/Page.html' }}
+{{ block title }}test for radios{{ endblock }}
+
+{{ block content }}
+
+
+<div style="display: flex">   
+    {{ for choice in form.risk_appetite }}
+        <div style="flex: 1; text-align: center">
+            {{ choice }}
+            <br>
+            <span style="text-align: center">{{ choice.label }}</span>
+        </div>
+        {{ endfor }}
+</div>
+{{ formfield_errors 'risk_appetite' }}
+<br>
+
+
+<p>
+    {{ formfield 'test2' }} 
+</p>
+
+{{ next_button }}
+
+{{ endblock }}

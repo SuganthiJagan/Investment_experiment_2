@@ -1,0 +1,29 @@
+{{ extends 'global/Page.html' }}
+{{ block title }}Many thanks for participating!{{ endblock }}
+
+{{ block content }}
+
+<p>
+Based on your leverage  decision and chance,
+    The investment decision <i>{{ participant.random_investment_option  }}</i> was randomly selected to determine your payoff.
+    The stock paid a return of
+    <i>{{ participant.return_investment }}</i>. Together with your choice of leverage <i>({{ participant.leverage }})</i> for the
+    above investment decision, your payoff is: <i>{{ participant.payoff_value }} USD </i>
+</p>
+<p>
+    </p>
+<p>
+    </p>
+<p>
+   Secret completion code: fhv9rwhvoehvuigfp1398z492p8fg2iwbwiucbiz23vb
+</p>
+ <p><i>
+        After clicking 'next', you will be redirected to CloudResearch. 
+    </i></p>
+
+<p>
+    
+</p>
+{{ next_button }}
+
+{{ endblock }}
